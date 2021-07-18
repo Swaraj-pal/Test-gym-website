@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('training-828732_1920.jpg');
+            font-family: 'Righteous', cursive;
+            color: white;
+        }
+
+        .topheader {
+            background-color: rgb(247, 247, 216);
+            margin: 0px 0px;
+            overflow: auto;
+            color: black;
+        }
+
+        .headercontent {
+            float: left;
+            margin: 2px 20px;
+        }
+
+        .headercontent2 {
+            margin: 2px 20px;
+            float: right;
+        }
+
+        .header {
+            color: white;
+        }
+
+        .left {
+
+            float: left;
+            margin: 0px 40px;
+        }
+
+        .left img {
+            height: 80px;
+            width: 120px;
+            filter: invert(100%);
+        }
+
+        .center {
+
+            display: inline-block;
+            width: 400px;
+            height: 40px;
+            margin: auto 20%;
+        }
+
+        .right {
+
+            display: inline;
+            margin: 17px 40px;
+            float: right;
+        }
+
+        li {
+            float: left;
+            margin: auto 15px;
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover,
+        li a.active {
+            text-decoration: underline;
+            color: rgb(196, 191, 191);
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            /* height: 40px;
+         width: 150px; */
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            padding: 11px;
+            border-radius: 8px;
+        }
+        .container .btn
+        { 
+          width: 73%;  
+        }
+        .btn:hover {
+            background-color: rgb(207, 200, 200);
+
+        }
+
+        #tagline {
+            position: absolute;
+            top: 40%;
+            left: 37%;
+            font-size: 30px;
+        }
+
+        .mainpara {
+            width: 50%;
+            position: absolute;
+            top: 55%;
+            left: 25%;
+            text-align: center;
+        }
+        .container
+        {
+            border: 2px solid white;
+            border-radius: 4px;
+            display: block;
+            width: 45%;
+            position: absolute;
+            top:70%;
+            left:30%;
+            text-align: center;
+            margin: 40px;
+            
+        }
+        input
+        {
+            display: block;
+            padding: 8px;
+            font-size:20px;
+            text-align: center;
+            margin: 10px auto;
+            width: 70%;
+            font-family: 'Righteous', cursive;
+        }
+        input::placeholder
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topheader">
+        <div class="headercontent">LB Nagar, Hyderabad</div>
+        <div class="headercontent">+91-9705584219</div>
+        <div class="headercontent2">Mon-Sat: 5:00 AM-11:00 AM & 5:00 PM-10:00 PM(IST)</div>
+    </div>
+    <header class="header">
+        <div class="left">
+            <img src="https://media.istockphoto.com/vectors/ezbar-curl-icon-on-white-background-vector-id1178509359?k=6&m=1178509359&s=612x612&w=0&h=kbhOY_TtBEq7INjdxsStvev1cOR8TMHj8E8yv4L93E0="
+                alt="">
+            <div>Swaraj's Fitness</div>
+        </div>
+        <div class="center">
+            <nav class="navbar">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">
+                BECOME A MEMBER
+            </button>
+        </div>
+    </header>
+    <div id="tagline">
+        <h2>FIT INDIA, LIT INDIA!</h2>
+    </div>
+    <div class="mainpara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam nostrum architecto voluptatum tempore
+        voluptate optio aliquam quae suscipit exercitationem dolore atque repudiandae, saepe molestiae ullam,
+        consectetur excepturi corporis, quod soluta itaque. Soluta suscipit itaque.
+    </div>
+    <div class="container">
+        <h3>Complimentary Diet plans for first 50 customers, Admissions open now!</h3> 
+    <form action="backend.php" class="formgroup">
+     <input type="text" class="formedits" placeholder="Enter your Name"></input>
+     <input type="text" class="formedits" placeholder="Enter your Age"></input>
+     <input type="text" class="formedits" placeholder="Enter your Gender"></input>
+     <input type="text" class="formedits" placeholder="Enter your Locality"></input>
+     <input type="text" class="formedits" placeholder="Enter your Phone Number"></input>
+    </form>
+    <button class="btn">
+        Submit now
+    </button>
+    </div>
+</body>
+
+</html>
